@@ -110,3 +110,13 @@ function findArrayIndex(array, text) {
    return indices
 }
 console.log(findArrayIndex(array, "Salamandra"));
+//----------------------------------------------------
+
+function rollDice(min,max){
+    var min = Math.ceil(min);
+    var max = Math.floor(max);
+    
+    return Math.floor(Math.random() * (max-min+1)+min);
+    
+    }
+    console.log(rollDice(3,6));
