@@ -96,3 +96,17 @@ for (let property in sounds){
 
 }
 }
+//-----------------------------------------------------------
+let array= ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];
+function findArrayIndex(array, text) {
+
+   let indices =[];
+
+   let idx= array.indexOf (text);
+   while (idx != -1){
+       indices.push(idx);
+       idx =array.indexOf(text,idx+1);
+   }
+   return indices
+}
+console.log(findArrayIndex(array, "Salamandra"));
