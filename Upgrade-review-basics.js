@@ -120,3 +120,18 @@ function rollDice(min,max){
     
     }
     console.log(rollDice(3,6));
+
+    //----------------------------------------------------
+    
+    let array = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];
+    let aux =" ";
+    function swap(arr,i1,i2){
+
+        aux=arr[i1];
+        arr[i1]= arr[i2];
+        arr[i2]=aux;
+
+        return arr;
+
+    }
+    console.log(swap(array,1,2));
