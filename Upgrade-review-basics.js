@@ -135,3 +135,32 @@ function rollDice(min,max){
 
     }
     console.log(swap(array,1,2));
+
+  //----------------------------------------------------------
+  
+  const movies = [
+    {title: 'Madaraspar', duration: 192, categories: ['comedia', 'aventura']},
+    {title: 'Spiderpan', duration: 122, categories: ['aventura', 'acción']},
+    {title: 'Solo en Whatsapp', duration: 223, categories: ['comedia', 'thriller']},
+    {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
+]
+
+
+
+const categoriaDePeliculas= movies.map(function(categoria){
+
+    return categoria.categories;
+})
+
+//console.log(categoriaDePeliculas);
+
+let categorias = categoriaDePeliculas.flat();
+
+//console.log(categorias);
+
+let sinDuplicados= categorias.filter((item,index)=>{
+    return categorias.indexOf(item)===index;
+})
+
+console.log(sinDuplicados);
+
